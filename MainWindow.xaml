@@ -1,0 +1,31 @@
+<Window x:Class="GameTimer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="デレステタイマー" Height="350" Width="525">
+	<Grid>
+		<!-- 時刻を表示するためのコントロール -->
+		<TextBlock Name="now_label" FontSize="32" Text="現在時刻" Margin="0,-5,382,271" />
+		<TextBlock Name="now_time" FontSize="32" Text="00:00:00" Margin="0,37,361,240" />
+		<TextBlock Name="label" FontSize="32" Text="現在のｽﾀﾐﾅ" Margin="161,-2,187,268" />
+		<TextBlock Name="stamina_label" FontSize="32" Text="00" Margin="209,38,243,239" />
+		<TextBlock Name="now_stamina_label" FontSize="24" Text="現在" Margin="359,1,109,282"/>
+		<TextBox Name="now_box" FontSize="24" Width="45" HorizontalAlignment="Left" Text="0" Margin="359,37,0,247" />
+		<TextBlock Name="max_label" FontSize="24" Text="最大" Margin="442,3,10,268"/>
+		<TextBox Name="max_box" FontSize="24" Width="46" HorizontalAlignment="Left" Text="65" Margin="442,36,0,248" />
+		<TextBlock Name="target_label" FontSize="24" Text="目標" Margin="359,77,102,209"/>
+		<TextBox Name="target_box" FontSize="24" Width="45" HorizontalAlignment="Left" Text="0" Margin="359,109,0,175" />
+		<TextBlock Name="target_time_label" FontSize="32" Text="目標まで" Margin="0,95,389,176"/>
+		<TextBlock Name="target_time" FontSize="32" Text="00:00:00" Margin="0,131,361,146" />
+		<TextBlock Name="max_time_label" FontSize="32" Text="最大まで" Margin="0,173,389,98"/>
+		<TextBlock Name="max_time" FontSize="32" Text="00:00:00" Margin="0,221,361,56" />
+		<TextBlock Name="target_time_label2" FontSize="32" Text="目標時刻" Margin="174,95,215,176"/>
+		<TextBlock Name="target_time2" FontSize="32" Text="00:00:00" Margin="174,131,187,146" />
+		<TextBlock Name="max_time_label2" FontSize="32" Text="最大時刻" Margin="174,173,215,98"/>
+		<TextBlock Name="max_time2" FontSize="32" Text="00:00:00" Margin="174,221,187,56" />
+		<TextBlock Name="rest_time_label" FontSize="24" Text="回復まで" Margin="420,109,10,177"/>
+		<TextBox Name="rest_time" FontSize="24" Width="45" HorizontalAlignment="Left" Text="0" Margin="370,160,0,124" />
+		<TextBox Name="rest_time_sec" FontSize="24" Width="45" HorizontalAlignment="Left" Text="0" Margin="442,160,0,124" />
+		<Button Content="開始" Width="75" HorizontalAlignment="Left" Margin="386,221,0,63" Click="Button_Click_1" />
+
+	</Grid>
+</Window>
